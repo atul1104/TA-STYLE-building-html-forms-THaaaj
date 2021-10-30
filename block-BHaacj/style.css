@@ -1,0 +1,372 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+
+/* Customized CSS */
+*,
+*::before,
+*::after{
+    box-sizing: border-box;
+}
+a{
+text-decoration:none;
+}
+.header-container{
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 2rem;
+    width:100%;
+}
+.container{
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 2rem;
+    width:100%;
+}
+body{
+    font-size: 1rem;
+    line-height: 1.5;
+    font-family: 'Roboto', sans-serif;
+}
+.width-full{
+    width: 100%;
+}
+.flex{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.flex-50{
+    flex: 0 1 50%;
+}
+.flex-46{
+    flex: 0 1 46%;
+}
+.flex-30{
+    flex: 0 1 30%;
+}
+.flex-20{
+    flex: 0 1 20%;
+}
+.grow{
+    flex:  1 1 auto;
+}
+.item-start{
+    align-items: flex-start;
+}
+.align-item{
+    align-items: stretch;
+}
+.justify-center{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+.column{
+flex-direction: column;
+}
+.justify-end{
+    justify-content: flex-end;
+}
+.margin-top{
+    margin-top: 50px
+}
+.padding{
+    padding: 48px 0;
+}
+.text-center{
+    text-align: center;
+}
+.font-0{
+    font-size: 0;
+}
+.center{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+main{
+    background-color: #e6e6e6;
+}
+.navbar{
+    padding: 32px 100px;
+}
+.active{
+    color: #69c6ba !important;
+}
+.navs li a  {
+    color: black;
+    margin-right: 2rem;
+}
+.navs li a:hover {
+    color: #69c6ba;
+}
+.brand-name{
+    font-size: 2.25rem;
+    color: black;
+}
+.bg-img{
+    height: 100vh;
+    width: 100%;
+    background: linear-gradient(rgba(0, 0, 0, 0.6),rgba(0, 0, 0, 0.6) ), url("../block-BHaacj/assets/banner.jpg") no-repeat;
+    text-align: center;
+    color: white;
+    background-size: cover;
+}
+.bg-img h2{
+    font-size: 40px;
+    font-weight: 500;
+}
+.bg-content{
+    padding: 50px 0;
+}
+.bg-content h3 {
+    font-size: 18px;
+    font-weight: 300;
+    margin-bottom: 12px;
+}
+.circles{
+    width: 8px;
+    height: 8px;
+    background-color: white;
+    border-radius: 50%;
+    margin: 10px 0;
+    display: inline-block;
+}
+.middle-circle{
+    width: 15px;
+    height: 15px;
+    margin: 8px 0;
+}
+.down-btn{
+    color: white;
+    width: 36px;
+    height: 36px;
+    border: 0;
+    border-radius: 50%;
+    background-color: #69c6ba;
+}
+.btn {
+    border: 0;
+    background-color: #69c6ba;
+    padding: 10px 20px;
+    color: white;
+    border-radius: 4px;
+}
+.btn-secondary{
+    background-color: white;
+    color: #69c6ba;
+}
+.form-control{
+    display: block;
+    width: 100%;
+    border: 0;
+    outline: 0;
+    padding: 12px 16px;
+}
+form{
+    background-color: white;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 10px;
+}
+form, .btn{
+    width: 100%;
+}
+label{
+    color: black;
+    display: block;
+    font-size: 14px;
+    text-align: left;
+    margin-bottom: 8px;
+}
+.about{
+    background-color: #efefef;
+}
+.about-wrapper{
+    width: 800px;
+    margin: 0 auto;
+}
+.about h2{
+    font-size: 36px;
+    text-transform: uppercase;
+}
+.about p{
+    margin: 18px 0;
+}
+.article-col-left{
+    position: relative;  
+}
+.nav-btn-container{
+    position: absolute;
+    top: 50%;
+}
+.nav-btn{
+    width: 60px;
+    height: 60px;
+    background-color: #847c75;
+    margin-left: 12px;
+}
+.nav-btn-icon{
+    width: 32px;
+    height: 32px;
+    background-color: white;
+    border-radius: 50%;
+}
+.article-col-right{
+    background-color: #69c6ba;
+    padding: 32px;
+    color: white;
+    /* left: -64px; */
+    position: relative;
+    z-index: 1;
+}
+.nav-btn-container-left{
+    left: -12px;
+}
+.nav-btn-container-right{
+    right: 0;
+}
+article h3{
+    font-size: 32px;
+    margin-bottom: 12px;
+}
+article p{
+    margin-bottom: 12px;
+}
+article{
+    background-color: white;
+}
+.bg-secondary{
+    background-color: #c66995;
+}
+/* Maps */
+.maps .grow{
+    text-align: center;
+    padding: 56px 0;
+    background-color: #69c6ba;
+}
+.grow p{
+    font-size: 16px;
+    text-transform: uppercase;
+    color: white;
+    margin-top: 12px;
+}
+.maps .active{
+    background-color: #c66995;
+}
+.maps .grow:hover{
+    background-color: #c66995;
+}
+.recommend-places{
+    max-width: 800px;
+    margin: 0 auto;
+    background-color:#69c6ba;
+    margin-bottom: 32px;
+    border: 1px solid gray;
+}
+.recommend-places-content{
+    padding: 32px;
+    background-color: white;
+    border-bottom-right-radius: 90px;
+    border-top-right-radius: 90px;
+}
+.recommend-places h3{
+    font-size: 20px;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+.recommend-places h4{
+    font-weight: 600;
+    font-size: 16px;
+    margin-bottom: 12px;
+}
+.recommend-places p{
+    font-size: 14px;
+}
+.recommend-places-pricing h4{
+    font-size: 32px;
+    color: white;
+}
+.recommend-places-pricing a{
+    color: white;
+    text-transform: uppercase;
+    font-size: 14px;
+}
+/* Cpntact */
+.contact{
+    position: relative;
+}
+.overlay{
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: 0;
+    background-color:rgba(0, 0, 0, 0.6);
+}
+.contact form{
+    position: absolute;
+    top: 80px;
+    bottom: 80px;
+    right: 80px;
+    width: 30%;
+}
+.contact .form-control{
+    border: 1px solid black;
+    margin-bottom: 8px;
+    background-color: #f5f5f5;
+}
+/* Footer */
+footer{
+    background-color: #69c6ba;
+    text-align: center;
+    color: white;
+    padding: 36px 0;
+}
